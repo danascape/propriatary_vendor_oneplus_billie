@@ -1,0 +1,69 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo"
+    },
+    {
+      "showName": "KeyPad"
+    },
+    {
+      "showName": "Backlight"
+    },
+    {
+      "showName": "SdCard"
+    },
+    {
+      "showName": "DualSIMCard",
+         "S86260AA1": {
+            "support": true
+         }
+    },
+    {
+      "showName": "SMARTPA",
+      "support": false
+    },
+
+    {
+      "showName": "BackDualCamera",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "MainCamera_light_leakage",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "Battery"
+    },
+    {
+      "showName": "GPS"
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "magnetism_tolerance": 30.0,
+        "support_calibrate": true,
+        "support_draw": true,
+        "support_test": true
+      }
+    },
+    {
+      "showName": "Sar1"
+    },
+    {
+      "showName": "Sar2"
+    },
+    {
+      "showName": "NFC"
+    },
+    {
+      "showName": "OTG"
+    },
+    {
+      "showName": "AirInterfaceTest"
+    }
+  ]
+}

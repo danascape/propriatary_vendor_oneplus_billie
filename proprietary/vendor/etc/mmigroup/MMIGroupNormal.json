@@ -1,0 +1,225 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo",
+      "support": true,
+      "action": "com.mmigroup.action.FACTORYVERSION",
+      "paramconfig": {
+        "support_camera_match": false,
+        "AddInfo": {
+          "CameraInfo": "any",
+          "verifiedbootstate": "green",
+          "System_Verity": "true"
+        }
+      }
+    },
+    {
+      "showName": "SMARTPA"
+    },
+    {
+      "showName": "KeyPad"
+    },
+    {
+      "showName": "Backlight"
+    },
+    {
+      "showName": "LCD"
+    },
+    {
+      "showName": "TouchPanel"
+    },
+    {
+      "showName": "SdCard"
+    },
+    {
+      "showName": "DualSIMCard"
+    },
+    {
+      "showName": "MainSIMCard",
+      "support": false
+    },
+    {
+      "showName": "MainCamera",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "WideCamera",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "MacroCamera",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "DepthCamera",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "BackDualCamera",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "FrontCamera",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "MainCamera_light_leakage",
+      "paramconfig": {
+        "takepicture_not_save_picture": true
+      }
+    },
+    {
+      "showName": "Flashlight"
+    },
+    {
+      "showName": "LeftSpeaker"
+    },
+    {
+      "showName": "RightSpeaker"
+    },
+    {
+      "showName": "Receiver"
+    },
+    {
+      "showName": "FM"
+    },
+    {
+      "showName": "HeadSet"
+    },
+    {
+      "showName": "HsMicToHeadPhone",
+      "paramconfig": {
+        "needHeadsetUnPlug": true
+      }
+    },
+    {
+      "showName": "MainMicToHeadPhone"
+    },
+    {
+      "showName": "MainMicToReceiver"
+    },
+    {
+      "showName": "MainMicToSpeaker"
+    },
+    {
+      "showName": "SubMicToSpeaker"
+    },
+    {
+      "showName": "RTC"
+    },
+    {
+      "showName": "Wlan"
+    },
+    {
+      "showName": "Bluetooth"
+    },
+    {
+      "showName": "GPS"
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": false
+      }
+    },
+    {
+      "showName": "Accelerometer",
+      "action": "com.mmigroup.action.ACCELEROMETER",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_axialresult": true,
+        "support_angle45": true,
+        "support_angleneg45": true,
+        "data_suffix_rate": 1000,
+        "gravity_45_degree_x": -4.9000,
+        "gravity_45_degree_y": 4.9000,
+        "gravity_45_degree_z": 6.9340,
+        "gravity_45_degree_tolerance": 0.71,
+        "gravity_axial_limit": 2.5,
+        "is_auto_calibrate": false,
+        "autoTest": {
+          "support_calibrate": false
+        }
+      }
+    },
+    {
+      "showName": "Gyroscope",
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_test": true,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Optical"
+    },
+    {
+      "showName": "Proximity_C",
+      "support": false
+    },
+    {
+      "showName": "Proximity"
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "magnetism_tolerance": 30.0,
+        "support_calibrate": true,
+        "support_draw": true,
+        "support_test": true
+      }
+    },
+    {
+      "showName": "fingerprint",
+      "support": true,
+      "paramconfig": {
+        "qualityLowNum": 40,
+        "support_enrolTest": false,
+        "support_identifyTest": false,
+        "support_qualityTest": true
+      }
+    },
+    {
+      "showName": "Battery"
+    },
+    {
+      "showName": "OTG"
+    },
+    {
+      "showName": "NFC"
+    },
+    {
+      "showName": "TpOpenShort"
+    },
+    {
+      "showName": "AirInterfaceTest"
+    },
+    {
+      "showName": "Sar1"
+    },
+    {
+      "showName": "Sar2"
+    },
+    {
+      "showName": "Pressure",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "is_only_test_chip": true
+      }
+    }
+  ]
+}
