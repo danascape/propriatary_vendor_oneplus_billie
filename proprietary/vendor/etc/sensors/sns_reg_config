@@ -7,5 +7,7 @@ file=soc_id=/sys/devices/soc0/soc_id
 file=revision=/sys/devices/soc0/revision
 file=board_pressure_support=/sys/devices/soc0/board_pressure_support
 file=output=/mnt/vendor/persist/sensors/registry/registry
+file=project=/sys/project_info/project_name
+file=hw_id=/sys/project_info/hw_id
 property=persist.vendor.sensors.enable.property=/mnt/vendor/persist/sensors/registry/file1
 property=persist.vendor.sensors.enable.property1=/mnt/vendor/persist/sensors/registry/file2

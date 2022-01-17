@@ -25,6 +25,9 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
     { "classId":"62", "name":"Device Attestation", "permissions":[] },
     { "classId":"78", "name":"Haven Token", "permissions":[] },
     { "classId":"70", "name":"RTIC App", "permissions":[] },
+    { "classId":"71", "name":"RTICe App", "permissions":[] },
+    { "classId":"101", "name":"Celluar Security Measures", "permissions":[] },
+    { "classId":"102", "name":"SCPassThrough", "permissions":[] },
     { "classId":"119", "name":"Platform Feature Management", "permissions":[] },
     { "classId":"146", "name":"TLOC Service", "permissions":[] }
   ]

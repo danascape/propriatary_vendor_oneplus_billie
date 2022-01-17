@@ -14,4 +14,9 @@ service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provid
     group audio camera input drmrpc oem_2907 wakelock
     ioprio rt 4
     capabilities SYS_NICE BLOCK_SUSPEND
-    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
+#ifdef ODM_WT_EDIT
+#baoxuegui@camera.drv 2021.1.27 add for improve the camera perf
+#   writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
+#else
+    task_profiles CameraServiceCapacity HighPerformance
+#endif

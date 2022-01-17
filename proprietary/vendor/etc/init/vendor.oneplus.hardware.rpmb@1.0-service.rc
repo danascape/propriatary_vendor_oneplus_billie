@@ -4,4 +4,4 @@ service vendor.rpmb_hal /vendor/bin/hw/vendor.oneplus.hardware.rpmb@1.0-service
     # /data is mounted.
     class late_start
     user system
-    group system input sdcard_rw
+    group everybody
