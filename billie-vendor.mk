@@ -10,8 +10,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/oneplus/billie/proprietary/lib/libopf.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libopf.so \
     vendor/oneplus/billie/proprietary/lib/libsensorservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsensorservice.so \
+    vendor/oneplus/billie/proprietary/lib/vendor.oneplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.hardware.cwb@1.0.so \
     vendor/oneplus/billie/proprietary/lib64/libopf.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libopf.so \
     vendor/oneplus/billie/proprietary/lib64/libsensorservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsensorservice.so \
+    vendor/oneplus/billie/proprietary/lib64/vendor.oneplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.hardware.cwb@1.0.so \
     vendor/oneplus/billie/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/oneplus/billie/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/oneplus/billie/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
