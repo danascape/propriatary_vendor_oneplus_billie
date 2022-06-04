@@ -251,7 +251,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/oneplus/billie/proprietary/vendor/bin/OPFTest:$(TARGET_COPY_OUT_VENDOR)/bin/OPFTest \
     vendor/oneplus/billie/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \
-    vendor/oneplus/billie/proprietary/vendor/bin/TrustedUISampleTest:$(TARGET_COPY_OUT_VENDOR)/bin/TrustedUISampleTest \
     vendor/oneplus/billie/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/oneplus/billie/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
     vendor/oneplus/billie/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
@@ -341,11 +340,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
     vendor/oneplus/billie/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/oneplus/billie/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
-    vendor/oneplus/billie/proprietary/vendor/bin/qseecom_sample_client:$(TARGET_COPY_OUT_VENDOR)/bin/qseecom_sample_client \
     vendor/oneplus/billie/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/oneplus/billie/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/oneplus/billie/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/oneplus/billie/proprietary/vendor/bin/secure_ui_sample_client:$(TARGET_COPY_OUT_VENDOR)/bin/secure_ui_sample_client \
     vendor/oneplus/billie/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/oneplus/billie/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
     vendor/oneplus/billie/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
@@ -357,20 +354,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
     vendor/oneplus/billie/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
     vendor/oneplus/billie/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
-    vendor/oneplus/billie/proprietary/vendor/bin/test:$(TARGET_COPY_OUT_VENDOR)/bin/test \
-    vendor/oneplus/billie/proprietary/vendor/bin/test_diag:$(TARGET_COPY_OUT_VENDOR)/bin/test_diag \
     vendor/oneplus/billie/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/oneplus/billie/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/oneplus/billie/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/oneplus/billie/proprietary/vendor/bin/tloc_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/tloc_daemon \
-    vendor/oneplus/billie/proprietary/vendor/bin/unlink:$(TARGET_COPY_OUT_VENDOR)/bin/unlink \
-    vendor/oneplus/billie/proprietary/vendor/bin/unshare:$(TARGET_COPY_OUT_VENDOR)/bin/unshare \
-    vendor/oneplus/billie/proprietary/vendor/bin/uuidgen:$(TARGET_COPY_OUT_VENDOR)/bin/uuidgen \
     vendor/oneplus/billie/proprietary/vendor/bin/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter@1.0-provision \
     vendor/oneplus/billie/proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_VENDOR)/bin/vl53l1_daemon_main \
     vendor/oneplus/billie/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
-    vendor/oneplus/billie/proprietary/vendor/bin/watch:$(TARGET_COPY_OUT_VENDOR)/bin/watch \
     vendor/oneplus/billie/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
     vendor/oneplus/billie/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
     vendor/oneplus/billie/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
