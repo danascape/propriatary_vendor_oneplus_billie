@@ -2,6 +2,11 @@
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
+
+# Create the directories used by qwes
+on post-fs-data
+    mkdir /data/vendor/qwes 0755 system system
+
 # Start daemon after boot completed
 on property:sys.boot_completed=1
     start vendor.ssgtzd
@@ -13,3 +18,4 @@ service vendor.ssgtzd /vendor/bin/ssgtzd
     group system
     disabled
     socket ssgtzd stream 0660 system inet
+    socket qwes_ipc stream 0660 system inet

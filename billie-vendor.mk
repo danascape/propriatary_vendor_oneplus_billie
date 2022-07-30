@@ -6,281 +6,139 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/billie
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/billie/proprietary/bin/iwpriv:$(TARGET_COPY_OUT_SYSTEM)/bin/iwpriv \
-    vendor/oneplus/billie/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
-    vendor/oneplus/billie/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
     vendor/oneplus/billie/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
-    vendor/oneplus/billie/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
-    vendor/oneplus/billie/proprietary/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nxp.nfc.xml \
-    vendor/oneplus/billie/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/oneplus/billie/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
-    vendor/oneplus/billie/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
-    vendor/oneplus/billie/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/oneplus/billie/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/oneplus/billie/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
-    vendor/oneplus/billie/proprietary/framework/com.nxp.nfc.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.nxp.nfc.jar \
     vendor/oneplus/billie/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
-    vendor/oneplus/billie/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/oneplus/billie/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
-    vendor/oneplus/billie/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
-    vendor/oneplus/billie/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
-    vendor/oneplus/billie/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
-    vendor/oneplus/billie/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
-    vendor/oneplus/billie/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
-    vendor/oneplus/billie/proprietary/lib/libnxpnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnxpnfc-nci.so \
-    vendor/oneplus/billie/proprietary/lib/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnxpnfc_nci_jni.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdaac.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcommonutils.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdconfigutils.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmminterface.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsink.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsrc_system.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdnative.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdrtsp.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdservice.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsinksm.so \
-    vendor/oneplus/billie/proprietary/lib/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsm.so \
-    vendor/oneplus/billie/proprietary/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcinterface.so \
-    vendor/oneplus/billie/proprietary/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsink.so \
-    vendor/oneplus/billie/proprietary/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsinkinterface.so \
-    vendor/oneplus/billie/proprietary/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrc.so \
-    vendor/oneplus/billie/proprietary/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrcinterface.so \
-    vendor/oneplus/billie/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
-    vendor/oneplus/billie/proprietary/lib64/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxMux.so \
-    vendor/oneplus/billie/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
-    vendor/oneplus/billie/proprietary/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmparser_lite.so \
-    vendor/oneplus/billie/proprietary/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpdecoder.so \
-    vendor/oneplus/billie/proprietary/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpencoder.so \
-    vendor/oneplus/billie/proprietary/lib64/libnxpnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc-nci.so \
-    vendor/oneplus/billie/proprietary/lib64/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc_nci_jni.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdcommonutils.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdconfigutils.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdmminterface.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdmmsink.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdrtsp.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdsinksm.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdsm.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcinterface.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsink.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsinkinterface.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrc.so \
-    vendor/oneplus/billie/proprietary/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrcinterface.so \
-    vendor/oneplus/billie/proprietary/priv-app/WfdService/lib/arm64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/WfdService/lib/arm64/libwfdnative.so \
-    vendor/oneplus/billie/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/oneplus/billie/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/oneplus/billie/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/oneplus/billie/proprietary/product/etc/permissions/embms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms.xml \
-    vendor/oneplus/billie/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
-    vendor/oneplus/billie/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
-    vendor/oneplus/billie/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
-    vendor/oneplus/billie/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.uceservice-V2.1-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.2-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.uceservice-V2.2-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/embmslibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/embmslibrary.jar \
-    vendor/oneplus/billie/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
-    vendor/oneplus/billie/proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/vendor.qti.hardware.soter-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.soter-V1.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/vendor.qti.ims.callcapability-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.callcapability-V1.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/vendor.qti.ims.factory-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.factory-V1.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
-    vendor/oneplus/billie/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.2.so \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.uceservice@2.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.uceservice@2.2.so \
-    vendor/oneplus/billie/proprietary/product/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvideocodec.so \
-    vendor/oneplus/billie/proprietary/product/lib/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvt.so \
-    vendor/oneplus/billie/proprietary/product/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvtextutils.so \
-    vendor/oneplus/billie/proprietary/product/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvtutils.so \
-    vendor/oneplus/billie/proprietary/product/lib/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdiag_system.so \
-    vendor/oneplus/billie/proprietary/product/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimscamera_jni.so \
-    vendor/oneplus/billie/proprietary/product/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimsmedia_jni.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.3.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.postproc@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.audiohalext@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.3.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.lpa@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qcriNvOpt@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qcriNvOpt@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.qtiradio@2.4.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.soter@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.vpp@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.callcapability@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.callinfo@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.factory@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.2.so \
-    vendor/oneplus/billie/proprietary/product/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvideocodec.so \
-    vendor/oneplus/billie/proprietary/product/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvt.so \
-    vendor/oneplus/billie/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
-    vendor/oneplus/billie/proprietary/product/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtutils.so \
-    vendor/oneplus/billie/proprietary/product/lib64/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdiag_system.so \
-    vendor/oneplus/billie/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
-    vendor/oneplus/billie/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-apis.qti.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.3.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.3.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.lpa@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qcriNvOpt@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qcriNvOpt@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.soter@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.vpp@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callcapability@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.factory@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
-    vendor/oneplus/billie/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Handset_cal.acdb \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/acdb_version:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_version \
+    vendor/oneplus/billie/proprietary/odm/etc/acdbdata/workspaceFile.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/workspaceFile.qwsp \
     vendor/oneplus/billie/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
+    vendor/oneplus/billie/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/oneplus/billie/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oneplus/billie/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
+    vendor/oneplus/billie/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/oneplus/billie/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/oneplus/billie/proprietary/system_ext/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.nxp.nfc.xml \
     vendor/oneplus/billie/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/billie/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/oneplus/billie/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
+    vendor/oneplus/billie/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
+    vendor/oneplus/billie/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
+    vendor/oneplus/billie/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
+    vendor/oneplus/billie/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    vendor/oneplus/billie/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/oneplus/billie/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
+    vendor/oneplus/billie/proprietary/system_ext/framework/com.nxp.nfc.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.nxp.nfc.jar \
     vendor/oneplus/billie/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
     vendor/oneplus/billie/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
+    vendor/oneplus/billie/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
+    vendor/oneplus/billie/proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
+    vendor/oneplus/billie/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/billie/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/oneplus/billie/proprietary/system_ext/lib/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmctmgr.so \
     vendor/oneplus/billie/proprietary/system_ext/lib/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmfdmgr.so \
     vendor/oneplus/billie/proprietary/system_ext/lib/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmframework.so \
     vendor/oneplus/billie/proprietary/system_ext/lib/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmtcm.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdclient.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdcommonutils.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdconfigutils.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfddisplayconfig.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmminterface.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsink.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsrc_system.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdrtsp.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdservice.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdsinksm.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcinterface.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsink.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
     vendor/oneplus/billie/proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/billie/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/oneplus/billie/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/oneplus/billie/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
     vendor/oneplus/billie/proprietary/system_ext/lib64/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmframework.so \
     vendor/oneplus/billie/proprietary/system_ext/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmtcm.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libnxpnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnxpnfc-nci.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnxpnfc_nci_jni.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfddisplayconfig.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmminterface.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmmsink.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdnative.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdrtsp.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdsinksm.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcinterface.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsink.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsinkinterface.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
     vendor/oneplus/billie/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
+    vendor/oneplus/billie/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/oneplus/billie/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
-    vendor/oneplus/billie/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/oneplus/billie/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/oneplus/billie/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/oneplus/billie/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
     vendor/oneplus/billie/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/oneplus/billie/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/oneplus/billie/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
-    vendor/oneplus/billie/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
-    vendor/oneplus/billie/proprietary/vendor/bin/diag_mdlog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog \
     vendor/oneplus/billie/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
-    vendor/oneplus/billie/proprietary/vendor/bin/factory:$(TARGET_COPY_OUT_VENDOR)/bin/factory \
-    vendor/oneplus/billie/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
-    vendor/oneplus/billie/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
-    vendor/oneplus/billie/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
-    vendor/oneplus/billie/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
+    vendor/oneplus/billie/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service_64 \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.gnss@2.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.0-service-qti \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.2-service-qti \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.secure_element@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.oneplus.hardware.camera@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.camera@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.display@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.oneplus.hardware.param@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.param@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.oneplus.hardware.rpmb@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.rpmb@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.oneplus.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.wifi@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.0-service \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.cvp@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.cvp@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.1-service \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
-    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetracker@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetracker@1.1-service \
+    vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetracker@1.2-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/oneplus/billie/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/oneplus/billie/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
@@ -288,22 +146,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/oneplus/billie/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
     vendor/oneplus/billie/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
-    vendor/oneplus/billie/proprietary/vendor/bin/iwpriv:$(TARGET_COPY_OUT_VENDOR)/bin/iwpriv \
-    vendor/oneplus/billie/proprietary/vendor/bin/load_wlan_driver:$(TARGET_COPY_OUT_VENDOR)/bin/load_wlan_driver \
+    vendor/oneplus/billie/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/oneplus/billie/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
     vendor/oneplus/billie/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
+    vendor/oneplus/billie/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/oneplus/billie/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
-    vendor/oneplus/billie/proprietary/vendor/bin/mmid:$(TARGET_COPY_OUT_VENDOR)/bin/mmid \
     vendor/oneplus/billie/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/oneplus/billie/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/oneplus/billie/proprietary/vendor/bin/oem-system-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/oem-system-daemon \
+    vendor/oneplus/billie/proprietary/vendor/bin/opf-service:$(TARGET_COPY_OUT_VENDOR)/bin/opf-service \
     vendor/oneplus/billie/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/oneplus/billie/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/oneplus/billie/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/oneplus/billie/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/oneplus/billie/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
     vendor/oneplus/billie/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
-    vendor/oneplus/billie/proprietary/vendor/bin/qcom-system-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qcom-system-daemon \
     vendor/oneplus/billie/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
     vendor/oneplus/billie/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
     vendor/oneplus/billie/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
@@ -317,19 +173,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
     vendor/oneplus/billie/proprietary/vendor/bin/ssgqmigd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd \
     vendor/oneplus/billie/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
-    vendor/oneplus/billie/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
-    vendor/oneplus/billie/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
-    vendor/oneplus/billie/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
     vendor/oneplus/billie/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/oneplus/billie/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/oneplus/billie/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
-    vendor/oneplus/billie/proprietary/vendor/bin/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter@1.0-provision \
     vendor/oneplus/billie/proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal@1.0-service \
+    vendor/oneplus/billie/proprietary/vendor/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_VENDOR)/bin/vl53l1_daemon_main \
+    vendor/oneplus/billie/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/oneplus/billie/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
     vendor/oneplus/billie/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
     vendor/oneplus/billie/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/oneplus/billie/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
-    vendor/oneplus/billie/proprietary/vendor/etc/OnePlus_QC_LTM_Commercial_SM7250_2020_04_26.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/OnePlus_QC_LTM_Commercial_SM7250_2020_04_26.pfm \
+    vendor/oneplus/billie/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
+    vendor/oneplus/billie/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
+    vendor/oneplus/billie/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
     vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -338,12 +194,42 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
-    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/acdb_version:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/acdb_version \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Bluetooth_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_General_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Global_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Handset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Hdmi_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Headset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Speaker_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_workspaceFile.qwsp \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Bluetooth_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_General_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Global_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Handset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Hdmi_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Headset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_Speaker_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/lito-orchidmtp-snd-card/MTP_Orchid_workspaceFile.qwsp \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_General_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Global_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Handset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Bluetooth_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_General_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Global_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Handset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Hdmi_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Headset_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Speaker_cal.acdb \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_workspaceFile.qwsp \
     vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    vendor/oneplus/billie/proprietary/vendor/etc/bluetooth/20801_op_nv.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/20801_op_nv.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/bluetooth/20804_op_nv.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/20804_op_nv.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/bluetooth/20888_TSM_op_nv.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/20888_TSM_op_nv.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/bluetooth/20889_TSM_op_nv.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/20889_TSM_op_nv.conf \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd \
+    vendor/oneplus/billie/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/oneplus/billie/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/oneplus/billie/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
     vendor/oneplus/billie/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
@@ -395,130 +281,81 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/dirac/diracvdd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/diracvdd.bin \
-    vendor/oneplus/billie/proprietary/vendor/etc/dirac/interfacedb:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/interfacedb \
-    vendor/oneplus/billie/proprietary/vendor/etc/fstab_nodata.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab_nodata.qcom \
+    vendor/oneplus/billie/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.0-service-qti.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.secure_element@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/factorybsp_service_qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/factorybsp_service_qcom.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/init.opf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.opf.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/self_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/self_init.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/tloc_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tloc_daemon.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.display@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.oneplus.hardware.param@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.param@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.oneplus.hardware.rpmb@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.rpmb@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.oneplus.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.wifi@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.cvp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.cvp@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.1-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.1-service.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/oneplus/billie/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/oneplus/billie/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/oneplus/billie/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_beijingbus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_beijingbus.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_changancard.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_changancard.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_productline.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_productline.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_shenzhentong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_shenzhentong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_suzhoutong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_suzhoutong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_wuhantong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_wuhantong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_yangchengtong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_yangchengtong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nci_zhengzhoubus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_zhengzhoubus.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_beijingbus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_beijingbus.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_changancard.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_changancard.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_noeSE.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_noeSE.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_productline.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_productline.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_productline_noeSE.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_productline_noeSE.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_shenzhentong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_shenzhentong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_suzhoutong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_suzhoutong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_wuhantong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_wuhantong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_yangchengtong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_yangchengtong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_RF_zhengzhoubus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF_zhengzhoubus.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_beijingbus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_beijingbus.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_changancard.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_changancard.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_noeSE_PLL.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_noeSE_PLL.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_noeSE_XTAL.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_noeSE_XTAL.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_productline.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_productline.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_productline_noeSE.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_productline_noeSE.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_shenzhentong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_shenzhentong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_suzhoutong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_suzhoutong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_wuhantong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_wuhantong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_yangchengtong.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_yangchengtong.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/libnfc-nxp_zhengzhoubus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_zhengzhoubus.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/lm/GameOptimizationFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/GameOptimizationFeature.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
-    vendor/oneplus/billie/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
-    vendor/oneplus/billie/proprietary/vendor/etc/ltm_config_samsung_ams644vk04_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams644vk04_fhd_cmd_mode_dsc_dsi_panel.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/oneplus_fps_plus.conf:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus_fps_plus.conf \
-    vendor/oneplus/billie/proprietary/vendor/etc/oneplus_ftm_test_dulspk.wav:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus_ftm_test_dulspk.wav \
+    vendor/oneplus/billie/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/permissions/android.sofware.nfc.beam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.sofware.nfc.beam.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/permissions/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/permissions/com.fingerprints.fpmmi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.fpmmi.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml \
@@ -540,24 +377,62 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_90HZ_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_90HZ_panel_with_DSC.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_samsung_ams644vk04_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ams644vk04_fhd_cmd_mode_dsc_dsi_panel.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/qvaconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvaconfig.xml \
+    vendor/oneplus/billie/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_bmi160_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_bmp380_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_mmc5603x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_stk33502_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_stk33502_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_sx932x__eu_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_sx932x__eu_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_sx932x_down__eu_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_sx932x_down__eu_1.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_sx932x_down_na_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_sx932x_down_na_1.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/billie_qrd_sx932x_na_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/billie_qrd_sx932x_na_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_ak991x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_bu52053nvx_0.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_default_sensors.json \
-    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_bmi160_0.json \
-    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_bmp380_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_icp101xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_icp101xx_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_lsm6dst_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_lsm6dst_1.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_ak991x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_alsps_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_alsps_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_bmi26x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_icm4x6xx_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_lsm6dst_0.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_mmc5603x_0.json \
-    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_stk33502_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_stk33502_0.json \
-    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_sx932x__eu_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_sx932x__eu_0.json \
-    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_sx932x__eu_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_sx932x__eu_1.json \
-    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_sx932x_na_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_sx932x_na_0.json \
-    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_sx932x_na_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_sx932x_na_1.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_qrd_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_qrd_tmd2725.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/bitra_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_tmd2725.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/dynamic_sensors.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/kona_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmi26x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/kona_mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_mmc5603x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/kona_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx9324_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/kona_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx9324up_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_ak991x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_bu52053nvx_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_default_sensors.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_icp101xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_icp101xx_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_lsm6dst_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_lsm6dst_1.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_qrd_400_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_qrd_400_ak991x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_qrd_440_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_qrd_440_ak991x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_qrd_ak991x_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_qrd_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_qrd_lsm6dst_0.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_qrd_lsm6dst_0_440.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_qrd_lsm6dst_0_440.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_qrd_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_qrd_lsm6dst_1.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_qrd_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_qrd_tmd2725.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/lito_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_tmd2725.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
@@ -566,6 +441,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_bring_to_ear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_bring_to_ear.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_ccd_v2_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v2_walk.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_ccd_v3_1_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_1_walk.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_ccd_v3_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_walk.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
@@ -575,6 +451,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_fmv_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv_legacy.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_heart_rate.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_heart_rate.json \
@@ -589,19 +466,107 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/qti_gravity.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel_cal.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_activity_recognition.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_activity_recognition.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_light.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_temperature.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_amd.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_aont.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_async_com_port.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_ttw.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_walk.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_client.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmc.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_cmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmd.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_da_test.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_dae.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dae.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_data_acquisition_engine.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_data_acquisition_engine.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_mode.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_facing.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fmv.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_formatter.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fw.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_game_rv.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_geomag_rv.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gravity.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_cal.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hall.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_beat.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_rate.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_hinge_angle.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hinge_angle.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_humidity.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_interrupt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_interrupt.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag_cal.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_mcmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mcmd.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_motion_detect.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_multishake.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_op_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_op_motion_detect.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_op_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_op_sar.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer_wrist.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_test.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_pocket.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pocket.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pose_6dof.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ppg.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pressure.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_proximity.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_psmd.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_registry.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_remote_proc_state.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_remote_proc_state.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_resampler.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rgb.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rmd.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rotv.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sar.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sensor_temperature.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sig_motion.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_signal_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_signal_sensor.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_sim.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_sim_legacy.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim_legacy.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_sensor.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_type.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_step_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_step_detect.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_suid.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_thermopile.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_threshold.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_timer.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
+    vendor/oneplus/billie/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/oneplus/billie/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/oneplus/billie/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/oneplus/billie/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/oneplus/billie/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/oneplus/billie/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
-    vendor/oneplus/billie/proprietary/vendor/etc/wt_cust_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wt_cust_audio.xml \
     vendor/oneplus/billie/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
-    vendor/oneplus/billie/proprietary/vendor/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AT500ms_RTP.bin \
     vendor/oneplus/billie/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/oneplus/billie/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_firmware.bin \
     vendor/oneplus/billie/proprietary/vendor/firmware/Himax_firmware_TEST.img:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_firmware_TEST.img \
-    vendor/oneplus/billie/proprietary/vendor/firmware/VZW_Alrwave_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/VZW_Alrwave_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/Version_Alert_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Version_Alert_RTP.bin \
     vendor/oneplus/billie/proprietary/vendor/firmware/a615_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b00 \
     vendor/oneplus/billie/proprietary/vendor/firmware/a615_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b01 \
     vendor/oneplus/billie/proprietary/vendor/firmware/a615_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b02 \
@@ -616,46 +581,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
     vendor/oneplus/billie/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
     vendor/oneplus/billie/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_160hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_160hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_162hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_162hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_164hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_164hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_166hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_166hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_168hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_168hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_170hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_170hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_172hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_172hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_174hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_174hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_176hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_176hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_178hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_178hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/agingtest_180hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_180hz_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Alarm_clock_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Alarm_clock_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Beep_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Beep_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Breeze_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Breeze_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Dawn_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Dawn_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Dream_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Dream_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Fluttering_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Fluttering_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Flyer_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Flyer_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Interesting_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Interesting_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Leisurely_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Leisurely_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Memory_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Memory_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Relieved_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Relieved_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Ripple_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Ripple_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Slowly_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Slowly_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Stars_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Stars_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Surging_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Surging_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_The_wind_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_The_wind_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_Walking_in_the_rain_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Walking_in_the_rain_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_spring_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_spring_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/alarm_tactfully_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_tactfully_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_haptic_166.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_166.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_haptic_168.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_168.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_170.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_haptic_172.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_172.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_haptic_174.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_174.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_rtp_lighthouse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp_lighthouse.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/aw8697_rtp_silk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp_silk.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/awinic_haptic_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic_haptic_params.bin \
     vendor/oneplus/billie/proprietary/vendor/firmware/hx_criteria.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/hx_criteria.csv \
     vendor/oneplus/billie/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/oneplus/billie/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
@@ -671,72 +596,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/firmware/lagoon_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b04 \
     vendor/oneplus/billie/proprietary/vendor/firmware/lagoon_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.elf \
     vendor/oneplus/billie/proprietary/vendor/firmware/lagoon_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.mdt \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Allay_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Allay_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Allusion_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Allusion_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Amiable_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Amiable_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Blare_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Blare_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Blissful_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Blissful_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Brisk_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Brisk_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Bubble_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Bubble_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Cheerful_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Cheerful_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Clear_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Clear_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Comely_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Comely_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Cozy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Cozy_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Ding_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Ding_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Effervesce_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Effervesce_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Elegant_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Elegant_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Free_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Free_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Hallucination_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Hallucination_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Inbound_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Inbound_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Light_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Light_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Meet_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Meet_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Naivety_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Naivety_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Quickly_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Quickly_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Rhythm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Rhythm_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Surprise_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Surprise_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/notif_Twinkle_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Twinkle_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ring_Amenity_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Amenity_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ring_Bounce_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Bounce_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ring_Calm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Calm_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ring_Lazy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Lazy_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ring_Mystical_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Mystical_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ring_Whirl_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Whirl_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Alacrity_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Alacrity_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Blues_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Blues_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Cloud_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Cloud_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Cyclotron_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Cyclotron_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Distinct_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Distinct_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Dynamic_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Dynamic_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Echo_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Echo_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Expect_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Expect_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Fanatical_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Fanatical_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Funky_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Funky_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Guitar_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Guitar_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Harping_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Highlight_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Highlight_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Idyl_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Idyl_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Innocence_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Innocence_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Journey_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Journey_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Joyous_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Joyous_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Marimba_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Marimba_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Old_telephone_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Old_telephone_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Oneplus_tune_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Oneplus_tune_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Optimistic_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Optimistic_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Piano_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Piano_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/ringtone_Rhythm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Rhythm_RTP.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/shuntai24k_rtp.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/t-jingle_RTP.bin \
     vendor/oneplus/billie/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/oneplus/billie/proprietary/vendor/firmware/tp/FW_20801_GT885.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_20801_GT885.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/tp/FW_20801_SY771.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_20801_SY771.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/tp/LIMIT_20801_GT885.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_20801_GT885.img \
-    vendor/oneplus/billie/proprietary/vendor/firmware/tp/LIMIT_20801_SY771.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_20801_SY771.img \
-    vendor/oneplus/billie/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin \
-    vendor/oneplus/billie/proprietary/vendor/firmware/widevine.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mbn \
-    vendor/oneplus/billie/proprietary/vendor/lib/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-external.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/android.hardware.sensors@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/firmware/tp/FW_20813_FT3518.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_20813_FT3518.img \
+    vendor/oneplus/billie/proprietary/vendor/firmware/tp/LIMIT_20813_FT3518.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_20813_FT3518.img \
     vendor/oneplus/billie/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/oneplus/billie/proprietary/vendor/lib/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.truly_cmb433.so \
     vendor/oneplus/billie/proprietary/vendor/lib/camera/com.qti.sensor.n2_gc02m1b_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.n2_gc02m1b_aux.so \
@@ -828,85 +690,34 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib/com.qti.feature2.swmf.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.swmf.bitra.so \
     vendor/oneplus/billie/proprietary/vendor/lib/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.swmf.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.2.so \
     vendor/oneplus/billie/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/oneplus/billie/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_adreno.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/oneplus/billie/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/ese_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/ese_client.so \
     vendor/oneplus/billie/proprietary/vendor/lib/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib/fp_hal_extension.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.0-impl-qti.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/audio.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.lito.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/awinic.haptic.effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/awinic.haptic.effect.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/com.qti.chi.override.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.bitra.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/goodix.fod.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/goodix.fod.lito.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/sound_trigger.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.lito.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@3.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.cvp@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.cvp@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.iop@2.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.servicetracker@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.servicetracker@1.1-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.soter@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/hw/vulkan.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.lito.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscmservice.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsqimf.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcs-v2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcsbaseimpl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsvtcore.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsxml.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpcommon.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpcore.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpsl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-siputility.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-siputility.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-uceservice.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libDxHdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDxHdcp.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGLESv2_adreno.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libI420colorconvert.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeg4SwEncoder.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeghSwEnc.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
@@ -921,7 +732,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Dec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxMpeghDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghDecSw.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxMpeghEncSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghEncSw.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libOmxMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMux_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVdec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVencMpeg4.so \
@@ -930,14 +740,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPolarrRender.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRbsFlow.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX471RmscLibrary.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSubSystemShutdown.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
     vendor/oneplus/billie/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
@@ -947,10 +752,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_app_profiles.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalCFR.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaoa.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_calibverify_TriCamera.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_bokeh_api.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_left.so \
@@ -970,16 +772,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbitmlengine.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libcamerapostproc.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerapostproc.bitra.so \
@@ -1000,224 +795,100 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchilog.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcomprcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcomprcapture.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcontentcopy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcontentcopy.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvface_api.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_common.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_stub.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvpcpuRev_skel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayskuutils.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libdiracgefwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiracgefwrapper.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdualcam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_image_optical_zoom.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom_control.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_video_optical_zoom.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexthwplugin.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libfastov_dsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastov_dsp.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgame_enhance.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgdtap.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofencing.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_ud_hal.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmiedid.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmipassthru.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libhdrdynamic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrdynamic.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libhdrdynamicootf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrdynamicootf.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhta_hexagon_runtime.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipebpsstriping.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblistenjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistenjni.so \
     vendor/oneplus/billie/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_core.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_socket.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiracast.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libmmparser_lite_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmparser_lite_proprietary.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmorpho_dcface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_dcface.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_nr_fusion.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_rmnet_ext.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libnightvision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnightvision.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnlnetmgr.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemaids_vendor.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libofflinelog.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libopenvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopenvx.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libopus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopus.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libp61-jcop-kit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libp61-jcop-kit.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libparam_vendor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libopf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopf.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libos.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libpn557_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn557_fw.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilFramework.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libqwes.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqwes.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-hal-qmi.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-ltedirectdisc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmiservices.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsi.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskewknob.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_registry_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreamparser.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynergy_loc_api.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynx.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthreadutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_image_optical_zoom.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_optical_zoom_control.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_video_optical_zoom.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustedapploader.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideooptfeature.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libvorbisidec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvorbisidec.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libvl53l1_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvl53l1_daemon.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphcp.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libwfdaac_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdaac_vendor.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcodecv4l2_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdconfigutils_proprietary.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfddisplayconfig_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdhdcpservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpservice_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdmminterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmminterface_proprietary.so \
@@ -1226,7 +897,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdrtsp_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdrtsp_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdsessionmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsessionmodule.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libwfdsm_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsm_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdsourcesession_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesession_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfdsourcesm_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesm_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfduibcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcinterface_proprietary.so \
@@ -1234,15 +904,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsinkinterface_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_librilutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtibus.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtimutex.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/dirac_resource.dar \
@@ -1266,134 +928,43 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhdr_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libproxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libproxy_skel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.hal.tof.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libdiraceffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdiraceffect.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhaptic_effect.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcompostprocbundle.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvisualizer.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvoiceprocessing.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib/unnhal-acc-hta.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.4.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.5.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvolumelistener.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.oneplus.fingerprint.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.fingerprint.extension@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.oneplus.hardware.camera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.hardware.camera@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.hardware.param@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.slm@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.gnss@3.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0-service.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.alarm@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_dun@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_dun@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cacert@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.cvp@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cvp@1.0-halimpl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cvp@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.3.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.5.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.6.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qcriNvOpt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qcriNvOpt@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.4.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.seccam@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.slmadapter@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.soter@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callcapability@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callinfo@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.latency@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.power.pasrmanager@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qspmhal@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qspmhal@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-external.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/android.hardware.sensors@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_AA409_UW_snapshot_v2040.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_AA409_UW_snapshot_v2040.bin \
     vendor/oneplus/billie/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF170_UW_snapshot_v2020.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF170_UW_snapshot_v2020.bin \
     vendor/oneplus/billie/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF170_W_snapshot_v2010.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF170_W_snapshot_v2010.bin \
     vendor/oneplus/billie/proprietary/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.truly_cmb433.so \
@@ -1486,8 +1057,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/com.qti.feature2.swmf.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.bitra.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -1501,51 +1070,40 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_adreno.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libQTapGLES.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/ese_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_client.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_spi_nxp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/fp_hal_extension.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hal_libnfc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hal_libnfc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-qti.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/audio.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.lito.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/com.qti.chi.override.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.bitra.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/fingerprint.egis.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.egis.default.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/goodix.fod.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodix.fod.lito.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/libets_teeclient_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libets_teeclient_v2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/sound_trigger.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.lito.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.cvp@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.cvp@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.servicetracker@1.1-impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vulkan.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.lito.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
@@ -1553,25 +1111,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsbaseimpl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtcore.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsxml.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/lib-rcsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rcsconfig.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcommon.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcore.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-siputility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-siputility.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-uceservice.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlgoProcess.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libAncSegBaseSdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAncSegBaseSdk.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libFaceBeautyLiteCap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceBeautyLiteCap.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libDxHdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDxHdcp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGLESv2_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libI420colorconvert.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeg4SwEncoder.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeghSwEnc.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libOPPO_Front_SCPortrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOPPO_Front_SCPortrait.so \
@@ -1592,17 +1147,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVpp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPlatformValidatorShared.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPolarrRender.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver_adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX471RmscLibrary.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSubSystemShutdown.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libSuperSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensor.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libSuperSensorFallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorFallback.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libSuperSensorProcessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorProcessor.so \
@@ -1611,26 +1163,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libVDDualCameraBlurlessAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDDualCameraBlurlessAPI.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libVDFusionBlurlessAPI_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDFusionBlurlessAPI_v2.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDSuperPhotoAPI.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/lib_bokehlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bokehlib.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/lib_oneplus_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oneplus_watermark.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2dpoffload.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libadaptlaunch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptlaunch.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_app_profiles.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libancbase_segbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase_segbase.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libaps_frame_registration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaps_frame_registration.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libapsdarksight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapsdarksight.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libapsexif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapsexif.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libapsjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapsjpeg.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libarcsoft_beautyshot_4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot_4.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_calibverify_TriCamera.so \
@@ -1655,19 +1198,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libarcsoft_superportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_superportrait.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_tricam_calibration.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_tricam_verification.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libarm_proxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_proxy_skel.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
@@ -1689,31 +1230,30 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svarnn.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc_system.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchrome.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libcomprcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomprcapture.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libcontentcopy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcontentcopy.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
@@ -1721,38 +1261,21 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdualcam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_image_optical_zoom.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_video_optical_zoom.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexthwplugin.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libfastov_dsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastov_dsp.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgame_enhance.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgameoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgameoptfeature.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-ipc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-osal.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ud_hal.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdmiedid.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdmipassthru.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libhdrdynamic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamic.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libhdrdynamicootf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamicootf.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libhvx_proxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvx_proxy_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
@@ -1761,15 +1284,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/liblearningmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblearningmodule.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/liblistenjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistenjni.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/liblmutils-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblmutils-ns.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
@@ -1782,48 +1300,34 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmemperfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemperfd.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmeters-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters-ns.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libminui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminui.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libminui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminui_vendor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmmparser_lite_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmparser_lite_proprietary.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmorpho_dcface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_dcface.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmorpho_image_refiner_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_image_refiner_deflicker.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_rmnet_ext.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libnightvision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnightvision.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/liboemnvbk_img_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemnvbk_img_helper.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libop-bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libop-bokeh.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libopenvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopenvx.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libopf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopf.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libp61-jcop-kit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libp61-jcop-kit.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libparam_vendor.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libpowercallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercallback.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpvr.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
@@ -1838,9 +1342,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_qmux.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csvt_srvc.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libqmiextservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiextservices.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
@@ -1850,32 +1352,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libqwes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqwes.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libril-qc-logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-logger.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-qmi-1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
@@ -1890,10 +1382,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskewknob.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndmonitor.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsnpe_adsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_adsp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsnpe_dsp_domains.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsnpe_dsp_domains_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_system.so \
@@ -1905,55 +1394,56 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_registry_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspkrprot.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssrec.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libstdc64++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstdc64++.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libstfaceunlockocl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstfaceunlockocl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-cpu.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphonypower.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_image_optical_zoom.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libvl53l1_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvl53l1_daemon.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/libyuv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libyuv2.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libxtwifi_server_protocol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/libxtwifi_server_protocol_uri_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol_uri_v3.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/ls_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ls_client.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.hal.tof.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhaptic_effect.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcompostprocbundle.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvisualizer.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvoiceprocessing.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hta.so \
@@ -1968,41 +1458,32 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.eventprocessor@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.fingerprint.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.fingerprint.extension@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.camera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.camera@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.display@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.ifaa@2.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.param@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.rpmb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.rpmb@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.wifi.supplicant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.wifi.supplicant@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.wifi2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.wifi2@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.wifi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.wifi@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.oneplus.hardware.wifi@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.wifi@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@3.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0-service.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@4.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0-service.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_dun@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_dun@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cvp@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -2013,13 +1494,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.1.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
@@ -2033,7 +1515,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcriNvOpt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcriNvOpt@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
@@ -2049,32 +1530,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.seccam@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@2.1.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
+    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.power.pasrmanager@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/oneplus/billie/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
@@ -2083,31 +1557,33 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
     vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
-    vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+    vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql \
+    vendor/oneplus/billie/proprietary/vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    libantradio \
     libfastcvopt \
     libthermalclient \
-    NxpNfcNci \
-    NxpSecureElement \
-    WfdService \
-    CACertService \
     CneApp \
     IWlanService \
     TimeService \
-    com.qualcomm.qti.gpudrivers.sm7250.api29 \
-    QtiTelephonyService \
-    datastatusnotification \
-    embms \
-    imssettings \
-    uceShimService \
+    com.oneplus.gpudrivers.kona.api30 \
+    com.qualcomm.qti.gpudrivers.lito.api30 \
+    PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    NxpNfcNci \
+    NxpSecureElement \
+    QtiTelephonyService \
+    WfdService \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    audiosphere \
     qcnvitems \
-    android.hardware.gnss@2.0-service-qti \
-    vendor.qti.gnss@3.0-service
+    com.fingerprints.fpmmi \
+    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.gnss@2.1-service-qti \
+    android.hardware.neuralnetworks@1.3-service-qti-hta \
+    android.hardware.neuralnetworks@1.3-service-qti \
+    manifest_android.hardware.drm@1.3-service.widevine \
+    vendor.qti.gnss@4.0-service \
+    vendor.qti.hardware.servicetracker@1.2-service

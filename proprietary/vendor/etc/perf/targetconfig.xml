@@ -46,11 +46,12 @@
              Target="lito"
              NumClusters="3"
              TotalNumCores="8"
-             SocIds="400,440"
+             SocIds="400,440,476"
              SynCore="1"
              CoreCtlCpu="0"
              MinCoreOnline="0"
-             CpufreqGov="1" />
+             CpufreqGov="1"
+             MinFpsForTuning="60" />
 
          <ClustersInfo Id="0" NumCores="6" Type="little" />
          <ClustersInfo Id="1" NumCores="1" Type="big" />
@@ -68,7 +69,8 @@
              SynCore="1"
              CoreCtlCpu="0"
              MinCoreOnline="0"
-             CpufreqGov="1" />
+             CpufreqGov="1"
+             MinFpsForTuning="60" />
 
          <ClustersInfo Id="0" NumCores="6" Type="little" />
          <ClustersInfo Id="1" NumCores="2" Type="big" />
